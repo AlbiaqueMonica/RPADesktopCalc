@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.8.10 on win32)" generated="20220805 23:17:01.393" rpa="true" schemaversion="2">
+<suite id="s1" name="Tasks" source="f:\robot\RPAWinCalculator\tasks.robot">
+<test id="s1-t1" name="Run Example">
+<kw name="Calculate using image locators" library="image-based">
+<doc>The locators expect the calculator to be Windows 10 calculator in white theme.
+So the automation will fail</doc>
+<kw name="Open the Calculator" library="image-based">
+<kw name="Open Application">
+<arg>calc.exe</arg>
+<msg timestamp="20220805 23:17:01.474" level="FAIL">No keyword with name 'Open Application' found.</msg>
+<status status="FAIL" starttime="20220805 23:17:01.474" endtime="20220805 23:17:01.502"/>
+</kw>
+<status status="FAIL" starttime="20220805 23:17:01.471" endtime="20220805 23:17:01.505"/>
+</kw>
+<kw name="TRY">
+<status status="NOT RUN" starttime="20220805 23:17:01.506" endtime="20220805 23:17:01.506"/>
+</kw>
+<kw name="RPA.Desktop.Click">
+<arg>alias:9</arg>
+<status status="NOT RUN" starttime="20220805 23:17:01.508" endtime="20220805 23:17:01.509"/>
+</kw>
+<kw name="RPA.Desktop.Click">
+<arg>alias:plus</arg>
+<status status="NOT RUN" starttime="20220805 23:17:01.513" endtime="20220805 23:17:01.513"/>
+</kw>
+<kw name="RPA.Desktop.Click">
+<arg>alias:5</arg>
+<status status="NOT RUN" starttime="20220805 23:17:01.515" endtime="20220805 23:17:01.515"/>
+</kw>
+<kw name="RPA.Desktop.Click">
+<arg>alias:eq</arg>
+<status status="NOT RUN" starttime="20220805 23:17:01.517" endtime="20220805 23:17:01.517"/>
+</kw>
+<kw name="Log the result" library="image-based">
+<status status="NOT RUN" starttime="20220805 23:17:01.517" endtime="20220805 23:17:01.517"/>
+</kw>
+<kw name="EXCEPT">
+<status status="NOT RUN" starttime="20220805 23:17:01.518" endtime="20220805 23:17:01.519"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>The image locators expect the calculator to be Windows 10 calculator in white theme.</arg>
+<arg>level=ERROR</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220805 23:17:01.519" endtime="20220805 23:17:01.519"/>
+</kw>
+<kw name="FINALLY">
+<status status="NOT RUN" starttime="20220805 23:17:01.521" endtime="20220805 23:17:01.521"/>
+</kw>
+<kw name="Screenshot">
+<arg>Calculadora</arg>
+<arg>%{ROBOT_ARTIFACTS}${/}image-based-result.png</arg>
+<status status="NOT RUN" starttime="20220805 23:17:01.524" endtime="20220805 23:17:01.524"/>
+</kw>
+<kw name="End" library="Reserved">
+<status status="NOT RUN" starttime="20220805 23:17:01.524" endtime="20220805 23:17:01.524"/>
+</kw>
+<kw name="Close Window" type="TEARDOWN">
+<arg>name:Calculadora</arg>
+<msg timestamp="20220805 23:17:01.526" level="FAIL">No keyword with name 'Close Window' found.</msg>
+<status status="FAIL" starttime="20220805 23:17:01.526" endtime="20220805 23:17:01.526">No keyword with name 'Close Window' found.</status>
+</kw>
+<status status="FAIL" starttime="20220805 23:17:01.470" endtime="20220805 23:17:01.527"/>
+</kw>
+<status status="FAIL" starttime="20220805 23:17:01.469" endtime="20220805 23:17:01.528">No keyword with name 'Open Application' found.
+
+Also keyword teardown failed:
+No keyword with name 'Close Window' found.</status>
+</test>
+<doc>Accessing Calculator</doc>
+<status status="FAIL" starttime="20220805 23:17:01.402" endtime="20220805 23:17:01.529"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220805 23:17:01.460" level="ERROR">Error in file 'f:\robot\RPAWinCalculator\KeywordLibrary\id-based.robot' on line 4: Importing library 'RPA.Windows' failed: Module 'RPA' does not contain 'Windows'.</msg>
+<msg timestamp="20220805 23:17:01.465" level="ERROR">Error in file 'f:\robot\RPAWinCalculator\KeywordLibrary\image-based.robot' on line 4: Importing library 'RPA.Windows' failed: Module 'RPA' does not contain 'Windows'.</msg>
+<msg timestamp="20220805 23:17:01.467" level="ERROR">Error in file 'f:\robot\RPAWinCalculator\KeywordLibrary\image-based.robot' on line 5: Importing library 'RPA.Desktop' failed: Module 'RPA' does not contain 'Desktop'.</msg>
+</errors>
+</robot>
